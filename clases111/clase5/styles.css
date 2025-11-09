@@ -1,0 +1,48 @@
+/* Selectores - Etiquetas Semánticas */
+body {
+    background-color: #FDFDFD;
+    color: #262626;
+}
+
+nav a {
+    text-decoration: none;
+    color: #262626;
+}
+
+/* Selectores - Etiquetas Inline */
+li, p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Selectores - Clases */
+.foto-perfil {
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+nav {
+    background-color: #E6E6E6;
+}
+
+.boton-accion {
+    text-decoration: none;
+    background-color: #758ecd;
+    color: #F9F5E5;
+}
+
+.boton-trabajo {
+    text-decoration: none;
+    background-color: #A9FBD7;
+    color: #262626;
+}
+
+.contenedor-flexible {
+    background-color: #F9F6F3;
+}
+
