@@ -1,0 +1,188 @@
+/* Definición de Variables */
+:root {
+    --color-fondo: #FAFAFA;
+    --color-texto: #1E1E1E;
+    --color-fondo-header: #F2E9E4; 
+    --color-boton-accion: #0077FF; 
+    --color-boton-accion-hover: #005AD3;
+    --color-boton-trabajo: #2E8B57;
+    --color-boton-trabajo-hover: #1E6E44;
+    --color-link: #005AD3; 
+    --color-link-visited: #4B0082;
+    --color-bio-fondo: #E0F7FA; 
+    --color-galeria-fondo: #FFF3E0; 
+    
+    /* Fuentes */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+    --fuente-secundaria: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --fuente-terciaria: 'Times New Roman', Times, serif;
+
+    /* Dimensiones */
+    --padding-general: 32px;
+    --padding-boton: 12px 8px;
+    --max-width-imagen: 300px;
+    --max-height-imagen: 200px;
+}
+
+/* Selector General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Selectores - Etiquetas Semánticas */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    padding: var(--padding-general);
+}
+
+nav {
+    padding: 24px 32px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+header {
+    background-color: var(--color-fondo-header);
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* Selectores - Etiquetas Inline */
+li,
+p,
+a {
+    font-family: var(--fuente-principal);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--fuente-secundaria);
+}
+
+/* Selectores - Clases */
+.foto-perfil {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 8px;
+}
+
+.ilustracion {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.boton-accion {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-boton-accion);
+    color: #F9F5E5;
+    padding: var(--padding-boton);
+}
+
+.boton-trabajo {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-boton-trabajo);
+    color: #F9F5E5;
+    padding: var(--padding-boton);
+}
+
+.boton-accion,
+.boton-trabajo {
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+.contenedor-grid img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: var(--max-height-imagen);
+    max-width: var(--max-width-imagen);
+}
+
+.bio {
+    background-color: var(--color-bio-fondo);
+    border-radius: 12px;
+    margin-top: 12px;
+}
+
+.galeria {
+    background-color: var(--color-galeria-fondo);
+    margin: 16px 0;
+}
+
+.contenedor-flexible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.contenedor-flexible img {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.contenedor-texto {
+    flex: 0 1 544px;
+}
+
+.contenedor-texto h2 {
+    padding: 16px 0;
+}
+
+.contenedor-texto h1 {
+    padding: 0 0 16px 0;
+}
+
+/* Pseudo Clases */
+.boton-accion:hover {
+    background-color: var(--color-boton-accion-hover);
+}
+
+.boton-trabajo:hover {
+    background-color: var(--color-boton-trabajo-hover);
+}
+
+.contenedor-grid img:hover {
+    opacity: 0.8;
+}
+
+nav li:first-child {
+    font-weight: bold;
+    font-family: var(--fuente-terciaria);
+    font-size: 24px;
+    margin-right: auto;
+}
+
+ul li a:link {
+    color: var(--color-link);
+}
+
+ul li a:visited {
+    color: var(--color-link-visited);
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
